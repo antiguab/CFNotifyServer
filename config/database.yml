@@ -21,6 +21,7 @@ default: &default
   username: adminvLdDrd7
   password: mChhFzlkyDni
   host: mysql://$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT/
+  port: 3306
 
 development:
   <<: *default
