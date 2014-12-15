@@ -26,3 +26,15 @@ Going to 127.0.0.1:3000 will land you at:
 
 ***INSERT PICTURE HERE***
 
+
+##Contribute
+
+This rails app is at: [http://cfnotifyserver-bantigua.rhcloud.com/](http://cfnotifyserver-bantigua.rhcloud.com/)
+
+To be added as a contributor to the Openshift App contact: [Bryan](mailto:bantigua@redhat.com)
+
+To push to OS add the following remote repo to the repo:
+
+```
+git remote add openshift ssh://548f50d9fcf933dad4000037@cfnotifyserver-bantigua.rhcloud.com/~/git/cfnotifyserver.git
+```
