@@ -18,10 +18,10 @@ default: &default
   adapter: mysql2
   encoding: utf8
   database: cfnotifyserver
-  username: adminvLdDrd7
-  password: mChhFzlkyDni
-  host: mysql://$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT/
-  port: 3306
+  username: <%= ENV['OPENSHIFT_MYSQL_DB_USERNAME'] %>
+  password: <%= ENV['OPENSHIFT_MYSQL_DB_PASSWORD'] %>
+  host: <%= ENV['OPENSHIFT_MYSQL_DB_HOST'] %>
+  port: <%= ENV['OPENSHIFT_MYSQL_DB_PORT'] %>
 
 development:
   <<: *default
