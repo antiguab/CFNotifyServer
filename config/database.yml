@@ -15,11 +15,12 @@
 # gem 'pg'
 #
 default: &default
-  adapter: postgresql
-  encoding: unicode
-  # For details on connection pooling, see rails configuration guide
-  # http://guides.rubyonrails.org/configuring.html#database-pooling
-  pool: 5
+  adapter: mysql2
+  encoding: utf8
+  database: cfnotifyserver
+  username: adminvLdDrd7
+  password: mChhFzlkyDni
+  host: mysql://$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT/
 
 development:
   <<: *default
