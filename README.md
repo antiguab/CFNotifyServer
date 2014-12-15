@@ -24,7 +24,7 @@ rail s
 
 Going to 127.0.0.1:3000 will land you at:
 
-***INSERT PICTURE HERE***
+![homepage](https://github.com/antiguab/CFNotifyServer/blob/master/readme-assets/Screen%20Shot%202014-12-15%20at%202.33.17%20PM.png)
 
 
 ##Contribute
