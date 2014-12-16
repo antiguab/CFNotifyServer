@@ -26,6 +26,50 @@ Going to 127.0.0.1:3000 will land you at:
 
 ***INSERT PICTURE HERE***
 
+##API
+
+###get 'users/search/:name'
+####Description
+Given a userid, this will return the user object in the rail db.
+
+####Example
+
+|     Get Call         |      Response        |
+| ------------ | ------------ |
+| ***http://cfnotifyserver-bantigua.rhcloud.com/users/search/admin*** | ```{"id":1,"name":"admin","password":"smartvm","created_at":"2014-10-26T20:58:26.256Z","updated_at":"2014-10-26T20:58:26.256Z"}``` |
+
+###get 'requests/search/:cfid'
+####Description
+Given a cfid, this will return the request object from the rails db.
+
+####Example
+
+|     Get Call         |      Response        |
+| ------------ | ------------ |
+| ***http://cfnotifyserver-bantigua.rhcloud.com/requests/search/10000000000025***| ```{"id":5,"cfid":"10000000000025","user_id":1,"created_at":"2014-10-27T05:16:01.266Z","updated_at":"2014-10-27T05:16:01.266Z"}``` |
+
+###get 'statuses/search/:requestid'
+####Description
+Given a requestid, this will return the status updates for that request from the rails db.
+
+####Example
+
+|     Get Call         |      Response        |
+| ------------ | ------------ |
+| ***http://cfnotifyserver-bantigua.rhcloud.com/requests/search/10000000000025***| ```{"id":5,"cfid":"10000000000025","user_id":1,"created_at":"2014-10-27T05:16:01.266Z","updated_at":"2014-10-27T05:16:01.266Z"}``` |
+
+
+
+
+
+
+
+
+
+
+  get 'statuses/search/:requestid' => 'statuses#getStatusWithRequestId'
+  post 'notify/index' => 'notify#index'
+
 
 ##Contribute
 
