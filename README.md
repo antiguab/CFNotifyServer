@@ -48,27 +48,10 @@ Given a cfid, this will return the request object from the rails db.
 | ------------ | ------------ |
 | ***http://cfnotifyserver-bantigua.rhcloud.com/requests/search/10000000000025***| ```{"id":5,"cfid":"10000000000025","user_id":1,"created_at":"2014-10-27T05:16:01.266Z","updated_at":"2014-10-27T05:16:01.266Z"}``` |
 
-###get 'statuses/search/:requestid'
+###post 'notify/index'
 ####Description
-Given a requestid, this will return the status updates for that request from the rails db.
+Given a requestID, status conent,and a user this will push a message to that user's channel.
 
-####Example
-
-|     Get Call         |      Response        |
-| ------------ | ------------ |
-| ***http://cfnotifyserver-bantigua.rhcloud.com/requests/search/10000000000025***| ```{"id":5,"cfid":"10000000000025","user_id":1,"created_at":"2014-10-27T05:16:01.266Z","updated_at":"2014-10-27T05:16:01.266Z"}``` |
-
-
-
-
-
-
-
-
-
-
-  get 'statuses/search/:requestid' => 'statuses#getStatusWithRequestId'
-  post 'notify/index' => 'notify#index'
 
 
 ##Contribute
